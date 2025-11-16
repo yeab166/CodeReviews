@@ -1,0 +1,152 @@
+.playSelectorContainer {
+  display: flex;
+  justify-content: center;
+  height: 10rem;
+  font-size: 15px;
+  padding-inline: 10px;
+  margin-top: 1em;
+  min-width: 100vw;
+}
+
+.playSelector {
+  height: 100%;
+  display: grid;
+  gap: 1em;
+  /*take full width of the container split in 4*/
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  text-align: center;
+  font-family: Rye;
+  color: white;
+}
+
+.playMultiple {
+  display: flex;
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  gap: 15.55em;
+  pointer-events: none;
+  user-select: none;
+}
+
+.playNumbers {
+  align-content: center;
+  pointer-events: auto;
+  border-width: 2rem;
+  border-bottom-color: #e8b3aa;
+  border-left-color: #78acab;
+  border-right-color: #a39acc;
+  border-top-color: #dca84d;
+  border-radius: 50%;
+  rotate: 45deg;
+  position: relative;
+  background: blue;
+  height: 0rem;
+  width: 0rem;
+  transition: ease transform 0.1s;
+}
+
+.playNumbers:active,
+.playBonus:active {
+  transform: scale(0.97);
+}
+
+.playNumbers::after,
+.playBonus::after {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  right: -2rem;
+  bottom: -2rem;
+  border: 2px solid black;
+  box-shadow: black 0px 0px 4px 0px;
+  border-radius: 50%;
+}
+
+.playBonus {
+  align-content: center;
+  pointer-events: auto;
+  border-width: 2rem;
+  border-bottom-color: #266a3c;
+  border-left-color: #171e70;
+  border-right-color: #b61c00;
+  border-top-color: #cd3aa4;
+  border-radius: 50%;
+  rotate: 45deg;
+  position: relative;
+  background: blue;
+  height: 0rem;
+  width: 0rem;
+}
+
+.betItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.5rem;
+  border: 2px solid oklch(var(--bc));
+  border-radius: 5px;
+  transition: ease transform 0.1s;
+  user-select: none;
+  height: 4.5rem;
+}
+
+.betOptionContainer {
+  padding-inline: 1.5em;
+}
+
+.betOption {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  z-index: 1;
+  background: white;
+  width: 5rem;
+  aspect-ratio: 1/1;
+  user-select: none;
+  color: white;
+  border-radius: 50%;
+}
+
+.pokerchipSvg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.betItem:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 1200px) {
+  .betItem {
+    font-size: 1.5em;
+  }
+  .playMultiple {
+    gap: 14.5em;
+  }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .playSelectorContainer {
+    margin-top: 0.5em;
+  }
+
+  .betItem {
+    font-size: 1em;
+  }
+
+  .playMultiple {
+    gap: 8.5em;
+  }
+}
