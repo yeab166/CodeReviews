@@ -1,0 +1,275 @@
+
+
+body {
+    background-image:url(c21.png) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-gray);
+    background-color: rgb(123, 146, 160);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-container {
+    max-width: 1200px; 
+    margin: 0px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.institution-logo-title {
+    display: flex;
+    align-items: center;
+    color: var(--dark-blue-text);
+}
+
+.header-icon {
+    font-size: 2.5em; 
+    color: var(--primary-blue);
+    margin-right: 15px;
+}
+
+.institution-text .institution-name {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--dark-blue-text);
+}
+
+.institution-text .institution-motto {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--text-gray);
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px; 
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-decoration: none;
+}
+
+
+.btn-login {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    margin-left: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.btn-login:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.btn i {
+    margin-right: 8px; 
+}
+
+
+.hero-section {
+    background-color: rgb(238, 245, 255); 
+    padding: 60px 20px; 
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    border: #007bff;
+    border-radius: 5px;
+}
+
+.hero-content h2 {
+    font-size: 2.8em;
+    color: var(--dark-blue-text);
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: var(--text-gray);
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color:Black ;
+    color: white;
+    border: 1px solid var(--accent-dark);
+    padding: 12px 30px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(36, 36, 125);
+    border-color: var(--accent-light-hover);
+    color: white;
+}
+
+
+.features-section {
+    padding: 60px 20px;
+    background-color: var(--white);   
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; 
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+.feature-card {
+    flex: 1; 
+    min-width: 280px; 
+    max-width: 350px; 
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #e4e8e4;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.feature-icon {
+    font-size: 3.5em; 
+    color: #2E56F3;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    color: var(--dark-blue-text);
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: var(--text-gray);
+}
+
+.programs-section {
+    background-color: var(--white); 
+    padding: 40px 20px; 
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 0px; 
+     margin: 0;
+padding: 0;
+    
+}
+
+.programs-container {
+    text-align: center;
+     background-color: #bcdaf4;
+    width: 100%;
+     border-radius: 30px;
+}
+
+.programs-container h2 {
+    font-size: 2.2em;
+    color: var(--dark-blue-text);
+    margin-bottom: 30px;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; 
+}
+
+.program-card {
+    background-color: white;
+    border: 1px solid var(--program-card-border);
+    border-radius: 8px;
+    padding: 20px 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--dark-blue-text);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.program-card:hover {
+    background-color: black;
+    color: white; 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.site-footer {
+    background-color: #003366; 
+    color: white;
+    text-align: center;
+    position: relative; 
+}
+
+.footer-content {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.footer-content .contact-info {
+    font-size: 0.9em;
+}
+
+.footer-content .contact-info a {
+    color: var(--footer-text);
+    text-decoration: underline;
+}
+
+.footer-content .contact-info a:hover {
+    text-decoration: none;
+}
+
+.help-icon {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px; 
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.7); 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.help-icon:hover {
+    color: var(--white);
+}
+
