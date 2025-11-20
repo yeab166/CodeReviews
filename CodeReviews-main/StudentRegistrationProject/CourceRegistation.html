@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course Registration — Mock</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CourceRegistration.css">
+ 
+</head>
+<body>
+  <header>
+    <div class="logo">A</div>
+    <div>
+      <div class="brand">Addis Ababa Science and Technology Institute</div>
+      <div class="tag">Online Student Registration System</div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="steps">
+        <div class="step"><div class="circle done">1</div><div class="step-label">Student Login</div></div>
+        <div class="bar"></div>
+        <div class="step"><div class="circle active">2</div><div class="step-label">Course Selection</div></div>
+        <div class="bar" style="opacity:0.3"></div>
+        <div class="step"><div class="circle inactive">3</div><div class="step-label">Review & Confirm</div></div>
+      </div>
+
+      <h1>Course Registration</h1>
+      <p class="sub">Register for your semester courses</p>
+           <div class="instructions boxed">
+        <strong>Instructions for Course Selection:</strong>
+        <ul>
+          <li>All required courses are automatically selected and cannot be deselected.</li>
+          <li>Choose elective courses by clicking on them or using the checkbox.</li>
+          <li>You must register for a minimum of 12 credits and maximum of 21 credits.</li>
+          <li>Review the schedule to avoid time conflicts.</li>
+        </ul>
+      </div>
+
+
+      <div class="card">
+        <div class="student">
+          <div class="avatar">AK</div>
+          <div>
+            <div class="name">Abebe Kebede</div>
+            <div class="meta">Computer Science • 2nd Year</div>
+          </div>
+          <div style="margin-left:auto;text-align:right;color:var(--muted)">
+            <div style="font-weight:700;font-size:18px">3.45</div>
+            <div class="meta">Current CGPA</div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat blue">
+            <h3>Selected Credits</h3>
+            <p>14 credits</p>
+          </div>
+          <div class="stat green">
+            <h3>Minimum Required</h3>
+            <p>12 credits</p>
+          </div>
+          <div class="stat yellow">
+            <h3>Maximum Allowed</h3>
+            <p>21 credits</p>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <div class="tab active">Required Courses (4)</div>
+          <div class="tab">Elective Courses (2)</div>
+        </div>
+
+        <div class="course-list">
+          <div class="course">
+            <div class="left">
+              <div class="checkbox"></div>
+              <div class="c-info">
+                <div class="c-title">Data Structures and Algorithms</div>
+                <div class="c-meta">C3A01 • Mon/Wed 9:00-10:30 • Instructor: Dr. Hailu</div>
+                <div style="margin-top:6px"><span class="required-badge">Required</span></div>
+              </div>
+            </div>
+            <div class="credits">4 Credits</div>
+          </div>
+
+          <div class="course">
+            <div class="left">
+              <div class="checkbox"></div>
+              <div class="c-info">
+                <div class="c-title">Object Oriented Programming</div>
+                <div class="c-meta">C3A02 • Tue/Thu 10:00-11:30 • Instructor: Prof. Sara</div>
+                <div style="margin-top:6px"><span class="required-badge">Required</span></div>
+              </div>
+            </div>
+            <div class="credits">2 Credits</div>
+          </div>
+
+<div class="course">
+            <div class="left">
+              <div class="checkbox"></div>
+              <div class="c-info">
+                <div class="c-title">Database Management Systems</div>
+                <div class="c-meta">C3A03 • Mon/Wed 2:00-4:00 • Instructor: Dr. Daniel</div>
+                <div style="margin-top:6px"><span class="required-badge">Required</span></div>
+              </div>
+            </div>
+            <div class="credits">4 Credits</div>
+          </div>
+
+          <div class="course">
+            <div class="left">
+              <div class="checkbox"></div>
+              <div class="c-info">
+                <div class="c-title">Discrete Mathematics</div>
+                <div class="c-meta">C3A04 • Tue/Thu 1:00-2:30 • Instructor: Dr. Meseret</div>
+                <div style="margin-top:6px"><span class="required-badge">Required</span></div>
+              </div>
+            </div>
+            <div class="credits">2 Credits</div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <footer>
+        <button class="btn">← Back</button>
+        <button class="btn primary">Next →</button>
+      </footer>
+
+    </div>
+  </main>
+</body>
+</html>

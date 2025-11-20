@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f6ff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #ffffff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo-text h2 {
+  margin: 0;
+  color: #1e40af;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+}
+
+.confirm-box {
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.check-icon {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background: #d1fadf;
+  border-radius: 50%;
+  color: #0f9157;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-box {
+  background: #e9f3ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.badge {
+  background: #2563eb;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.dates-list li {
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.download-btn {
+  background: #000836;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.new-btn {
+  background: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: 2px solid #d1d5db;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  color: #4b5563;
+  font-size: 14px;
+  display:flex;
+  justify-content: space-between;
+}
+.backbuttons{
+    margin-left: 200px;
+}

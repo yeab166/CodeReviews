@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --one: #78acab;
+  --two: #dca84d;
+  --five: #e8b3aa; 
+  --ten: #a39acc;
+  --cf: #171e70;
+  --pch: #cd3aa4;
+  --ch: #266a3c;
+  --jp: #b61c00;
+  --ten-cent: #4CAF50;
+  --twenty-cent: #2196F3;
+  --fifty-cent: #F44336;
+  --one-euro: #FFEB3B;
+  --two-euro: #9C27B0;
+}
+
+html {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,7 @@
+.container {
+  justify-items: center;
+  text-align: center;
+  max-width: 30rem;
+  font-size: 3rem;
+  justify-self: center;
+}

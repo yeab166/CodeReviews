@@ -1,0 +1,12 @@
+services:
+  app:
+    image: spin
+    build:
+      context: .
+      dockerfile: dev.dockerfile
+    volumes:
+      - .:/app
+    container_name: spinthewheelapp
+    ports:
+      - 3000:3000
+

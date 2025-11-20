@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>
+      Addis Ababa Science and Technology Institution - Course Registration
+    </title>
+    <link rel="stylesheet" href="./Login.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <!-- small logo mark -->
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <rect
+              x="2"
+              y="4"
+              width="20"
+              height="16"
+              rx="3"
+              fill="#2f59ff"
+            ></rect>
+            <path d="M6 9h12v2H6z M6 13h8v2H6z" fill="#fff" opacity="0.95" />
+          </svg>
+          <div class="brand-text">
+            <div class="title">
+              Addis Ababa Science and Technology Institution
+            </div>
+            <div class="subtitle">Online Student Registration System</div>
+          </div>
+        </div>
+
+        <div class="back-btn">
+          <button
+            type="button"
+            aria-label="Back to Selection"
+            class="btn-ghost"
+          >
+            ← Back to Selection
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="progress-section">
+        <h1 class="page-title">Course Registration</h1>
+        <p class="page-sub">Register for your semester courses</p>
+
+        <nav class="progress">
+          <div class="step current">
+            <div class="circle">1</div>
+            <div class="label">Student Login</div>
+          </div>
+
+          <div class="step">
+            <div class="circle">2</div>
+            <div class="label">Course Selection</div>
+          </div>
+
+          <div class="step">
+            <div class="circle">3</div>
+            <div class="label">Review Confirm</div>
+          </div>
+        </nav>
+      </section>
+
+      <section class="card-section">
+        <div class="card">
+          <h2 class="card-title">Student Login</h2>
+          <p class="card-desc">Please login with your student credentials</p>
+
+          <form
+            class="login-form"
+            action="#"
+            method="post"
+            autocomplete="on"
+            novalidate
+          >
+            <label class="field">
+              <span class="field-label">Student ID</span>
+              <div class="input-wrap">
+                <svg
+                  class="input-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 12a4 4 0 1 0-.001-8.001A4 4 0 0 0 12 12zm0 2c-3.33 0-10 1.667-10 5v3h20v-3c0-3.333-6.67-5-10-5z"
+                  />
+                </svg>
+                <input
+                  name="student_id"
+                  type="text"
+                  placeholder="Enter your student ID"
+                  required
+                />
+              </div>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Password</span>
+              <div class="input-wrap">
+                <svg
+                  class="input-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M17 8V7a5 5 0 0 0-10 0v1H5v12h14V8h-2zM9 7a3 3 0 0 1 6 0v1H9V7z"
+                  />
+                </svg>
+                <input
+                  name="password"
+                  type="password"
+                  placeholder="Enter your password"
+                  required
+                />
+              </div>
+            </label>
+
+            <button class="btn-submit" type="submit">Login</button>
+          </form>
+
+          <div class="demo-box" aria-live="polite">
+            <strong>Demo Credentials</strong>
+            <ul>
+              <li>ID: AA-ST2001 (1st Year - Computer Science)</li>
+              <li>ID: AA-ST2002 (1st Year - Electrical Engineering)</li>
+              <li>ID: AA-ST2003 (1st Year - Mechanical Engineering)</li>
+              <li>Password: demo123 (for all demo accounts)</li>
+            </ul>
+          </div>
+
+          <a class="forgot-link" href="#" aria-label="Forgot your password?"
+            >Forgot your password?</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer" aria-hidden="true">
+      <!-- optional small footer for spacing -->
+    </footer>
+  </body>
+</html>

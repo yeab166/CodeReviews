@@ -1,0 +1,115 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 95vw;
+  height: 95vw;
+  max-height: 50em;
+  max-width: 50em;
+  position: relative;
+  perspective: 150em;
+  font-size: 15px;
+  transform: translateZ(-0.4em);
+}
+
+.coin {
+  --face: #0066ff;
+  --sign: #c49a44;
+  --circle: #c49a44;
+  --side: #dbb765;
+  --back: #dc233c;
+  --slide: #c49a44;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform ease-in-out 5s;
+}
+
+.face {
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: var(--face);
+}
+
+.front {
+  transform: translate3d(0, 0, 1em) rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg) translate3d(0, 0, 1em);
+  background: var(--back);
+}
+
+.symbol {
+  position: absolute;
+  color: var(--sign);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 19em;
+  font-family: Sanchez, sans-serif;
+  padding-right: 0.1em;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 1.25em dashed var(--circle);
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.side {
+  width: 2em;
+  background: var(--side);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  backface-visibility: hidden;
+  border-top: 1.1em solid var(--slide);
+  border-bottom: 0.1em solid var(--slide);
+}
+
+//position the sides
+@for $i from 1 through 20 {
+  $translateZ: 24.8em;
+  $height: 8.3em;
+  .coin figure:nth-of-type(#{$i}) {
+    transform: translate3d(-50%, -50%, 0) rotateY(90deg) rotateX(($i - 1) * 18deg) translateZ($translateZ);
+    height: $height;
+    @media (max-width: 1920px) {
+      $translateZ: 17.3rem;
+      transform: translate3d(-50%, -50%, 0) rotateY(90deg) rotateX(($i - 1) * 18deg) translateZ($translateZ);
+      height: 5.5rem;
+    }
+    @media (max-width: 597px) {
+      $translateZ: 46.6vw;
+      transform: translate3d(-50%, -50%, 0) rotateY(90deg) rotateX(($i - 1) * 18deg) translateZ($translateZ);
+      height: 15vw;
+    }
+  }
+}
+@media (max-width: 1920px) {
+  .container {
+    max-height: 35rem;
+    max-width: 35rem;
+  }
+}
+@media (max-width: 597px) {
+  .symbol {
+    font-size: 36vw;
+  }
+}
+
