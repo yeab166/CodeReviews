@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header-card">
+            <div class="header-content">
+                <div class="student-info">
+                    <h1>Course Registration</h1>
+                    <p id="studentName">Welcome, Student</p>
+                </div>
+                <div class="header-buttons">
+                    <button id="viewReportBtn" class="btn btn-success">
+                        📄 View Report
+                    </button>
+                    <button id="logoutBtn" class="btn btn-secondary">
+                        🚪 Logout
+                    </button>
+                </div>
+            </div>
+
+            <!-- Credit Counter -->
+            <div class="credit-counter" id="creditCounter">
+                <span>Total Credit Hours:</span>
+                <span id="creditDisplay">0 / 19</span>
+            </div>
+
+            <!-- Notification -->
+            <div id="notification" class="notification" style="display: none;"></div>
+        </div>
+
+        <!-- Registered Courses -->
+        <div id="registeredCoursesSection" class="card" style="display: none;">
+            <h2>📚 Registered Courses (<span id="registeredCount">0</span>)</h2>
+            <div id="registeredCoursesList"></div>
+        </div>
+
+        <!-- Minimum Credit Warning -->
+        <div id="minimumCreditWarning" class="card warning-card" style="display: none;">
+            <h2>⚠️ Minimum Credit Requirement</h2>
+            <p>You must register for at least <strong>15 credit hours</strong> to complete your registration. Currently registered: <strong id="currentCreditsWarning">0</strong> credits.</p>
+        </div>
+
+        <!-- Year 3 Courses -->
+        <div class="card">
+            <h2>📖 Year 3 - Semester 1 Courses</h2>
+            <p class="section-description">Register for courses from your current year. You must complete at least 15 credit hours.</p>
+            <div id="year3Courses" class="courses-grid"></div>
+        </div>
+
+        <!-- Year 4 Courses (Only shown if student failed at least one prerequisite) -->
+        <div id="year4Section" class="card" style="display: none;">
+            <h2>📖 Year 4 - Semester 1 Courses</h2>
+            <p class="section-description">Additional courses available for students retaking prerequisites.</p>
+            <div id="year4Courses" class="courses-grid"></div>
+        </div>
+
+        <!-- Year 5 Courses (Only shown if student failed at least one prerequisite) -->
+        <div id="year5Section" class="card" style="display: none;">
+            <h2>📖 Year 5 - Semester 1 Courses</h2>
+            <p class="section-description">Advanced courses available for students retaking prerequisites.</p>
+            <div id="year5Courses" class="courses-grid"></div>
+        </div>
+
+        <!-- Completed Prerequisites -->
+        <div class="card">
+            <h2>✅ Completed Prerequisites</h2>
+            <div id="completedCourses" class="prerequisites-list"></div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="registration.js"></script>
+</body>
+</html>

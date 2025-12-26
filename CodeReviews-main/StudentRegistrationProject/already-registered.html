@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Already Registered</title>
+    <link rel="stylesheet" href="already-registered.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header-card">
+            <div class="icon">✅</div>
+            <h1>Registration Already Complete</h1>
+            <p class="subtitle">You have already completed your course registration</p>
+        </div>
+
+        <!-- Student Info -->
+        <div class="card">
+            <h2>Student Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <p class="info-label">Student Name</p>
+                    <p class="info-value" id="studentName">-</p>
+                </div>
+                <div class="info-item">
+                    <p class="info-label">Student ID</p>
+                    <p class="info-value" id="studentId">-</p>
+                </div>
+                <div class="info-item">
+                    <p class="info-label">Total Courses</p>
+                    <p class="info-value" id="totalCourses">0</p>
+                </div>
+                <div class="info-item">
+                    <p class="info-label">Total Credits</p>
+                    <p class="info-value" id="totalCredits">0</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registered Courses -->
+        <div class="card">
+            <h2>📚 Your Registered Courses</h2>
+            <div id="registeredCoursesList"></div>
+        </div>
+
+        <!-- Completed Prerequisites -->
+        <div class="card">
+            <h2>✅ Completed Prerequisites</h2>
+            <div id="completedCourses" class="prerequisites-list"></div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button id="viewReportBtn" class="btn btn-primary">
+                📄 View Full Report
+            </button>
+            <button id="printReportBtn" class="btn btn-success">
+                🖨️ Print Report
+            </button>
+            <button id="logoutBtn" class="btn btn-secondary">
+                🚪 Logout
+            </button>
+        </div>
+
+        <!-- Info Box -->
+        <div class="info-box">
+            <p><strong>Note:</strong> Your registration is complete and has been saved. If you need to make changes to your registration, please contact the registrar's office.</p>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="already-registered.js"></script>
+</body>
+</html>
